@@ -1,0 +1,39 @@
+Implicit Type Conversion
+
+byte b = 1; // a byte takes up a single byte of memory
+int i = b; // an integer takes up 4 bytes of memory - converting a byte to int is easy considering only 1 of 4 bytes is needed
+
+int i = 1;
+float f = i // again, no data loss
+
+
+Explicit Type Conversion
+
+int i = 1;
+byte b = i // WON'T Compile! Integer is 4 bytes, so 3 of the bytes will be lost. Chance for data loss.
+
+You need to explicitely tell compiler that you are aware of data loss and still want to go ahead with conversion
+
+int i = 1;
+byte b = (byte)i;
+
+Another example:
+float f = 1.0f;
+int i = (int)f;
+
+
+Non-compatible Types
+
+string s = "1";
+int i = (int)s; // won't compile
+
+string s = "1";
+int i = Convert.ToInt32(s);
+int j = int.Parse(s);
+
+
+Convert Methods:
+- ToByte()
+- ToInt16()
+- ToInt32()
+- ToInt64()
