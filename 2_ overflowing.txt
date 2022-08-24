@@ -1,0 +1,9 @@
+Overflowing
+- byte number = 255
+- number = number + 1; Gives 0 because we are overflowing (use checked keyword to get around this)
+
+checked 
+{
+	byte number = 255
+	number = number + 1
+} 
