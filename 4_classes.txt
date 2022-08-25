@@ -1,0 +1,30 @@
+Declaring Classes
+
+public class Person
+{
+	public string Name;
+
+	public void Introduce()
+	{
+		Console.WriteLine("Hi, my name is " + Name);
+	}
+}
+
+
+Creating Objects
+
+var person = new Person();
+person.Name = "Dave";
+person.Introduce();
+
+
+Static Modifier
+
+public class Calculator
+{
+	public static int Add(int a, int b)
+	{
+	return a + b;
+	}
+} // adding 'static' means we can access this method directly without having to create an object
+Example: int result = Calculator.Add(1, 2);
