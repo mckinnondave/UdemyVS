@@ -1,0 +1,8 @@
+TYPES:
+Structures and Classes
+
+Structures: Are Value Types. Memory allocation done automatically and immediately removed when out of scope.
+Primitive types and custom structures
+
+Classes: Are Reference Types. You need to allocate memory. Memory allocated on heap. Garbage collected by CLR.
+Arrays, strings, and custom classes
