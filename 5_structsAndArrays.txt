@@ -1,0 +1,33 @@
+Declaring Structs
+
+public struct RgbColor 
+{
+	public int Red;
+	public int Green;
+	public int Blue;
+}
+
+These are similar to Classes with some differences. Structs usually used for small, lightway concepts like this color group. 99% of the time, we would use classes though.
+
+
+Arrays
+
+Declaring:
+
+To do this:
+int number1
+int number2
+int number3
+
+We can do this:
+int[] numbers = new int[3]; // notice the new operator because we are allocating memory.
+
+Accessing elements:
+
+number[0] = 1;
+number[1] = 2;
+number[2] = 3;
+
+or 
+
+int[] numbers = new int[3] { 1, 2, 3 };
