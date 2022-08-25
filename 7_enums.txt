@@ -1,0 +1,10 @@
+Enums: A set of name/value pairs (constants)
+
+public enum ShippingMethod
+{
+	RegularAirMail = 1;
+	RegristeredAirMail = 2;
+	express = 3;
+}
+
+var method = ShippingMethod.Express;
