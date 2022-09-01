@@ -1,0 +1,31 @@
+ARRAYS
+
+2 types in C#: Single Dimension and Multi Dimension
+
+Single: var numbers = new int[5] {1, 2, 3, 4, 5}
+
+Multi: 2 types of multi dimension arrays - Rectangular and Jagged
+
+Syntax for a rectangular 2D array => 
+var matrix = new int[3, 5]; OR (if you know how you want to fill it up)
+var matrix = new int[3, 5] 
+{
+	{1, 2, 3, 4, 5},
+	{6, 7, 8, 9, 10},
+	{11, 12, 13, 14, 15}
+};
+To access a value - var element = matrix [0, 0];
+
+Syntax for a 3d array - var colors = new int [4, 5, 6];
+
+Jagged Array Syntax
+var array = new int [3][];
+array[0] = new int[4];
+array[1] = new int[5];
+array[2] = new int[3];
+
+Gives us something like:
+0, 1, 2, 3
+0, 1, 2, 3, 4
+0, 1, 2
+
