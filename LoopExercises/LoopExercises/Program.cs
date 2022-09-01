@@ -52,7 +52,7 @@ namespace LoopExercises
             Console.WriteLine("{0}! = {1}", input, sum);
         }*/
 
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             var random = new Random().Next(1, 10);
             var chances = 0;
@@ -76,6 +76,24 @@ namespace LoopExercises
             {
                 Console.WriteLine("You lost :(. The secret number is {0}", random);
             }
+        }*/
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter a series of numbers seoparated by a comma:");
+            var input = Console.ReadLine();
+            var numbers = input.Split(',');
+            var max = Convert.ToInt32(numbers[0]);
+
+            foreach (var num in numbers)
+            {
+                var number = Convert.ToInt32(num);
+                if (number > max)
+                {
+                    max = number;
+                }
+            }
+            Console.WriteLine("The max number is {0}", max);
         }
     }
 }
