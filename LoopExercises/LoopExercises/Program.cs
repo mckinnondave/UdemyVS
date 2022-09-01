@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,7 +39,7 @@ namespace LoopExercises
             Console.WriteLine("The sum of all your inputs equals {0}", sum);
         }*/
 
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             Console.WriteLine("Please enter a number: ");
             var input = Convert.ToInt32(Console.ReadLine());
@@ -49,6 +50,32 @@ namespace LoopExercises
                 sum *= i;
             }
             Console.WriteLine("{0}! = {1}", input, sum);
+        }*/
+
+        static void Main(string[] args)
+        {
+            var random = new Random().Next(1, 10);
+            var chances = 0;
+            var correct = false;
+
+            while (chances < 4 && !correct)
+            {
+                Console.WriteLine("Please pick a random number between 1 and 10: ");
+                var input = Convert.ToInt32(Console.ReadLine());
+                if (input != random)
+                {
+                    chances++;
+                } 
+                else
+                {
+                    correct = true;
+                    Console.WriteLine("You won! The secret number is {0}", random);
+                }
+            }
+            if (chances == 4)
+            {
+                Console.WriteLine("You lost :(. The secret number is {0}", random);
+            }
         }
     }
 }
